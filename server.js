@@ -12,6 +12,7 @@ app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Welcome to Node Mongo app");
+  
 });
 
 app.post("/adduser", (req, res) => {
