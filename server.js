@@ -11,7 +11,7 @@ app.use(bp.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Welcome to Mongo App");
+  res.send("Welcome to MongoDB App");
 });
 
 app.post("/adduser", (req, res) => {
