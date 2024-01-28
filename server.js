@@ -10,6 +10,10 @@ app.use(bp.json());
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Welcome to Node Mongo app");
+});
+
 app.post("/adduser", (req, res) => {
   const users = new empcrud({
     ...req.body,
